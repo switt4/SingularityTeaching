@@ -97,6 +97,7 @@ export LC_ALL="en_US.UTF-8"
 export ND_ENTRYPOINT="/neurodocker/startup.sh"
 export FSLDIR="/opt/fsl-5.0.10"
 export PATH="/opt/fsl-5.0.10/bin:$PATH"
+. ${FSLDIR}/etc/fslconf/fsl.sh
 
 %runscript
 /neurodocker/startup.sh "$@"
